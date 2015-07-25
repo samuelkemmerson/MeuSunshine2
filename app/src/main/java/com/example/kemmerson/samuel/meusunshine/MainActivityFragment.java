@@ -38,8 +38,7 @@ public class MainActivityFragment extends Fragment {
         List<String> weekForecast = new ArrayList<String>(
                 Arrays.asList(forecastArray));
 
-        mForecastAdapter =
-                new ArrayAdapter<String>(
+       ArrayAdapter<String> mForecastAdapter = new ArrayAdapter<String>(
                   getActivity(),
                   R.layout.list_item_forecast,
                   R.id.list_item_forecast_textview,
